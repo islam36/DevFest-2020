@@ -1,0 +1,146 @@
+@import url('./Poppins.ttf');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    background: linear-gradient(-45deg, #1CB5E0, #000046); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(to right, #f12711, #f5af19, #f12711 );
+    background-size: 200%;
+    background-position: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all .4s ease;
+    animation: change 8s ease-in-out infinite;
+    color: black;
+}
+
+@keyframes change{
+    0%{
+        background-position: left;
+    }
+    50%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+}
+
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card .content {
+    margin: 10px;
+}
+
+
+.card .content h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.card .content p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.btn{
+    font-weight: 700;
+    background-color: #1796b9;
+    border-style: unset;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #137f9c;
+}
+
+
+.card svg{
+    height: 200px;
+    width: 200px;
+}
+
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+
+
+.modal .modal-content{
+    padding: 25px;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    background-color: #eee;
+    background-size: 200%;
+    background-position: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+    /* animation: change 8s ease-in-out infinite; */
+}
+
+.modal .modal-content h1{
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(-45deg, #1CB5E0, #000046);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.modal .modal-content p {
+    text-align: justify;
+}
+
+.modal .modal-content .btn{
+    margin-top: auto;
+}
