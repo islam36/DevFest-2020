@@ -1,0 +1,314 @@
+:root{
+    --dark-blue: #191c48;
+    --light-blue: #4285f4;
+    --yellow: #f9ab00;
+    --gray: #424242;
+    --white: #f8f9fa;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-color: var(--dark-blue);
+    width: 870px;
+    height: 480px;
+    position: relative;
+    top: 50%;
+    background-image: radial-gradient(var(--light-blue) 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+
+.window{
+    background-color: var(--yellow);
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.btn {
+    background-color: #00aa11;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 5px;
+}
+
+.canva{
+    background-color: var(--white);
+    width: calc(100% - 6px);
+    height: calc(100% - 26px);
+    position: relative;
+    top: 22px;
+    left: 3px;
+}
+
+.outline{
+    width: 50%;
+    height: 50%;
+    z-index: 0;
+    position: relative;
+    top: -23%;
+    left: 26%;
+    background-color: transparent;
+    border-color: var(--yellow);
+    border-style: solid;
+    border-width: 2.5px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: var(--yellow);
+    position: absolute;
+
+}
+
+.dot:nth-child(1){
+    top: -5px;
+    right: -5px;
+}
+
+.dot:nth-child(2){
+    bottom: -5px;
+    right: -5px;
+}
+
+.dot:nth-child(3){
+    bottom: -5px;
+    left: -5px;
+}
+
+.canva *{
+    position: absolute;
+    background-color: var(--gray);
+}
+
+
+
+.head1{
+    width: 80px;
+    height: 40px;
+    top: 25%;
+    left: 50%;
+}
+
+.head2{
+    width: 60px;
+    height: 10px;
+    top: 21%;
+    left: 52.5%;
+}
+
+
+.head3{
+    width: 40px;
+    height: 10px;
+    top: 43%;
+    left: 50%;
+}
+
+.head4{
+    width: 70px;
+    height: 10px;
+    top: 47%;
+    left: 50%;
+}
+
+.eye{
+    position: absolute;
+    background-color: var(--white) !important;
+    width: 10px;
+    height: 10px;
+    top: 28%;
+    left: 55%;
+    z-index: 3;
+}
+
+.body1{
+    width: 35px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+}
+
+.body2{
+    width: 10px;
+    height: 10px;
+    top: 53%;
+    left: 48%;
+}
+
+.body3{
+    width: 25px;
+    height: 10px;
+    top: 56%;
+    left: 45%;
+}
+
+.body4{
+    width: 45px;
+    height: 10px;
+    top: 59%;
+    left: 42%;
+}
+
+.body5{
+    width: 50px;
+    height: 10px;
+    top: 62%;
+    left: 40%;
+}
+
+.body6{
+    width: 100px;
+    height: 25px;
+    top: 67%;
+    left: 34.8%;
+}
+
+.body7{
+    width: 80px;
+    height: 10px;
+    top: 78%;
+    left: 37%;
+}
+
+.hand1{
+    width: 20px;
+    height: 10px;
+    top: 60%;
+    left: 58%;
+}
+
+.hand2{
+    width: 10px;
+    height: 20px;
+    top: 62%;
+    left: 60.2%;
+}
+
+.leg-r1{
+    width: 25px;
+    height: 7px;
+    top: 82%;
+    left: 47%;
+}
+
+.leg-r2{
+    width: 10px;
+    height: 10px;
+    top: 85%;
+    left: 47%;
+}
+
+.leg-r3{
+    width: 10px;
+    height: 34px;
+    top: 85%;
+    left: 49%;
+}
+
+.leg-r4{
+    width: 10px;
+    height: 10px;
+    top: 96%;
+    left: 51%;
+}
+
+.leg-l1{
+    width: 25px;
+    height: 7px;
+    top: 82.5%;
+    left: 38%;
+}
+
+.leg-l2{
+    width: 10px;
+    height: 10px;
+    top: 85%;
+    left: 40.5%; 
+}
+
+.leg-l3{
+    width: 10px;
+    height: 34px;
+    top: 85%;
+    left: 39%;  
+}
+
+.leg-l4{
+    width: 10px;
+    height: 10px;
+    top: 96%;
+    left: 41%;
+}
+
+.tail1{
+    width: 10px;
+    height: 10px;
+    top: 63%;
+    left: 34.77%;
+}
+
+.tail2{
+    width: 10px;
+    height: 35px;
+    top: 58%;
+    left: 33%;
+}
+
+.tail3{
+    width: 10px;
+    height: 40px;
+    top: 52%;
+    left: 31%;
+}
+
+.roadR{
+    width: 100px;
+    height: 5px;
+    top: 90%;
+    left: 60%;
+}
+
+
+
+.roadL{
+    width: 40px;
+    height: 5px;
+    top: 90%;
+    left: 25%;
+}
+
+.dot1{
+    width: 5px;
+    height: 5px;
+    top: 100%;
+    left: 81%;
+}
+
+.lineL1{
+    width: 20px;
+    height: 5px;
+    top: 98%;
+    left: 32%;
+}
+
+
+
+
+
+.canva * {
+    transform: translateY(-25px);
+}
