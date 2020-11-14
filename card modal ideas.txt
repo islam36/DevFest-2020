@@ -1,0 +1,2 @@
+use neumorphism + gradients
+for the button: use ripple effect from "material design of google"
