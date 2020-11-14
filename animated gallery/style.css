@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #1CB5E0, #000046); 
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+.elem{
+    margin: 30px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.elem img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 3s ease;
+}
+.elem:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+}
+.elem img:hover{
+    transform: scale(2);
+}
